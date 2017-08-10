@@ -1,9 +1,120 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GitHub Pages Test</title>
+    <title>Meghan Paul's Personal Portfolio</title>
+    <!-- Reset CSS -->
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet"/>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <!-- Custom CSS -->
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
   </head>
+
   <body>
-    <h1>Hello, GitHub Pages!</h1>
+    <!--Create header-->
+    <div class="jumbotron-fluid">
+      <div class="container-fluid">
+        <h1>Meghan Paul</h1>
+        <h2>Personal Portfolio</h2>
+      </div>
+
+      <!--Create a nav bar to link to other areas of the webpage-->
+      <header class="container-fluid">
+        <nav class="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#sites">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#social">Social Media</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!--Create section to show portfolio sites-->
+    <div class="container portfolio" id="sites">
+      <h3>
+        Portfolio Sites
+      </h3>
+      <div class="row">
+        <div class="col-sm-3">
+          <p>LawnDiggity</p>
+          <a href="http://www.lawndiggity.com" target="_blank">
+            <img src="./resources/images/lawn-diggity.jpeg" alt="LawnDiggity business website"/>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <p>Tribute Page</p>
+          <a href="https://codepen.io/nonlinearone1105/pen/XMMdEX" target="_blank">
+            <img src="./resources/images/tribute-page.jpeg" alt="Bernadette Peters Tribute Page"/>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <p>Random Quote Generator</p>
+          <a href="https://codepen.io/nonlinearone1105/pen/xOLEbo" target="_blank">
+            <img src="./resources/images/quote-generator.jpeg" alt="Random LGBT Quote Generator"/>
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <p>Wikipedia Viewer</p>
+          <a href="https://codepen.io/nonlinearone1105/full/wdeKaB/" target="_blank">
+            <img src="./resources/images/wikipedia-viewer.jpeg" alt="Wikipedia Viewer">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <p>Current Local Weather App</p>
+          <a href="https://codepen.io/nonlinearone1105/pen/JKvjzb" target="_blank">
+            <img src="https://i.imgur.com/fm45cDR.png" alt="Current Weather App">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Create section for contact information-->
+    <div class="container" id="contact">
+      <h3>Contact Me</h3>
+      <p>Email: mepaul1210@gmail.com</p>
+    </div>
+
+    <!--Create footer to link to social media-->
+    <footer class="container-fluid" id="social">
+      <div class="row">
+        <p class="col-sm-4">&copy Meghan Paul 2017</p>
+        <ul class="col-sm-8">
+          <li class="col-sm-1">
+            <a href="https://www.freecodecamp.com/nonlinearone1105" target="_blank">
+              <img src="https://cdn.rawgit.com/Deftwun/e3756a8b518cbb354425/raw/6584db8babd6cbc4ecb35ed36f0d184a506b979e/free-code-camp-logo.svg" alt="FreeCodeCamp button"/>
+            </a>
+          </li>
+          <li class="col-sm-1">
+            <a href="https://codepen.io/nonlinearone1105" target="_blank">
+              <img src="https://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg" alt="CodePen button"/>
+            </a>
+          </li>
+          <li class="col-sm-1">
+            <a href="https://github.com/nonlinearone1105" target="_blank">
+              <img src="http://image005.flaticon.com/25/svg/25/25231.svg" alt="GitHub button"/>
+            </a>
+          </li>
+          <li class="col-sm-1">
+            <a href="https://www.linkedin.com/in/meghan-paul-002689120?trk=nav_responsive_tab_profile" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt="LinkedIn button"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
