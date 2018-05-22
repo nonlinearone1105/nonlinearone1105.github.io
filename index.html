@@ -6,6 +6,10 @@
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet"/>
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:700i" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
     <!-- Custom CSS -->
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet"/>
     <!-- Favicons -->
@@ -19,206 +23,298 @@
 
   <body>
     <!--Create header-->
-    <div class="jumbotron-fluid">
-      <div class="container-fluid">
-        <h1>Meghan Paul</h1>
-        <h2>Personal Portfolio</h2>
-      </div>
-
+    <header class="jumbotron-fluid">
       <!--Create a nav bar to link to other areas of the webpage-->
-      <header class="container-fluid">
-        <nav class="navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#sites">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#social">Social Media</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+      <nav>
+        <div>
+          <a href="#portfolio">Portfolio</a>
+        </div>
+        <div>
+          <a href="#contact">Contact Me</a>
+        </div>
+        <div>
+          <a href="#social">Social Media</a>
+        </div>
+      </nav>
+      <div class="info">
+        <h1>Meghan Paul</h1>
+        <h2>Web Development Portfolio</h2>
+      </div>
+    </header>
 
     <!--Create section to show portfolio sites-->
-    <div class="container portfolio" id="sites">
+    <div id="portfolio">
       <h3>
         Portfolio Sites
       </h3>
-      <div class="row">
-        <div class="col-sm-3">
-          <h4>LawnDiggity</h4>
-          <p>Webpage created for a local small business</p>
-          <div class="image-container">
-            <a href="http://www.lawndiggity.com" target="_blank">
+      <div class="sites">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <img src="./resources/images/max.jpeg" alt="MAX SF social website"/>
+            </div>
+            <div class="back">
+              <h4>MAX SF</h4>
+              <p>Webpage created for a gay men's social organization in San Francisco</p>
+              <a href="http://www.maxsf.org" target="_blank">Go</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <img src="./resources/images/magellan-mastermind.png" alt="Magellan Mastermind financial advisors coaching website"/>
+            </div>
+            <div class="back">
+              <h4>Magellan Mastermind</h4>
+              <p>Webpage created for a financial advisor coaching program</p>
+              <a href="http://www.magellanmastermind.com" target="_blank">Go</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <img src="./resources/images/saint-lucie-dems.jpg" alt="Saint Lucie Democrats website"/>
+            </div>
+            <div class="back">
+              <h4>Saint Lucie Democrats</h4>
+              <p>Webpage created for the Democrats of Saint Lucie County in Florida</p>
+              <a href="http://www.saintluciedemocrats.com" target="_blank">Go</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/lawn-diggity.jpeg" alt="LawnDiggity business website"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>LawnDiggity</h4>
+              <p>Webpage created for a local lawn care start-up</p>
+              <a href="http://www.lawndiggity.com" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Jammming</h4>
-          <p>React app created using the Spotify API for a React bootcamp on Codecademy</p>
-          <div class="image-container">
-            <a href="http://nifty-clocks.surge.sh" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/jammming.jpeg" alt="Jammming React App"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>Jammming</h4>
+              <p>React app created using the Spotify API for a React bootcamp on Codecademy</p>
+              <a href="http://nifty-clocks.surge.sh" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Ravenous</h4>
-          <p>React app created using the Yelp API for a React bootcamp on Codecademy</p>
-          <div class="image-container">
-            <a href="http://early-hall.surge.sh/" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/ravenous.jpeg" alt="Ravenous React App"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>Ravenous</h4>
+              <p>React app created using the Yelp API for a React bootcamp on Codecademy</p>
+              <a href="http://early-hall.surge.sh/" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>National GIMA</h4>
-          <p>Website created for a gospel music organization</p>
-          <div class="image-container">
-            <a href="https://ngima.wildapricot.org/" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/ngima.jpeg" alt="National Gospel Instrumental Music Association Website"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>National GIMA</h4>
+              <p>Website created for a gospel music organization</p>
+              <a href="https://ngima.wildapricot.org/" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Jumpstart</h4>
-          <p>Mock crowdsourcing site created for a Codecademy web design bootcamp</p>
-          <div class="image-container">
-            <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/jumpstart/blob/master/index.html" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/jumpstart.jpeg" alt="Jumpstart Website"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>Jumpstart</h4>
+              <p>Mock crowdsourcing site created for a Codecademy web design bootcamp</p>
+              <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/jumpstart/blob/master/index.html" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Current Local Weather App</h4>
-          <p>Web app created using the OpenWeather API for a freeCodeCamp assignment</p>
-          <div class="image-container">
-            <a href="https://codepen.io/nonlinearone1105/pen/JKvjzb" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/weather.jpeg" alt="Current Weather App">
-            </a>
+            </div>
+            <div class="back">
+              <h4>Current Local Weather App</h4>
+              <p>Web app created using the OpenWeather API for a freeCodeCamp assignment</p>
+              <a href="https://codepen.io/nonlinearone1105/pen/JKvjzb" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Match Game</h4>
-          <p>jQuery memory game created for a Codecademy web design bootcamp</p>
-          <div class="image-container">
-            <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/match-game/blob/master/index.html" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/match-game.jpeg" alt="Card Memory Match Game"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>Match Game</h4>
+              <p>jQuery memory game created for a Codecademy web design bootcamp</p>
+              <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/match-game/blob/master/index.html" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Wikipedia Viewer</h4>
-          <p>Web app created using the Wikipedia API for a freeCodeCamp assignment</p>
-          <div class="image-container">
-            <a href="https://codepen.io/nonlinearone1105/full/wdeKaB/" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/wikipedia-viewer.jpeg" alt="Wikipedia Viewer">
-            </a>
+            </div>
+            <div class="back">
+              <h4>Wikipedia Viewer</h4>
+              <p>Web app created using the Wikipedia API for a freeCodeCamp assignment</p>
+              <a href="https://codepen.io/nonlinearone1105/full/wdeKaB/" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Random Quote Generator</h4>
-          <p>Random LGBT quote generator created for a freeCodeCamp assignment</p>
-          <div class="image-container">
-            <a href="https://codepen.io/nonlinearone1105/pen/xOLEbo" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/quote-generator.jpeg" alt="Random LGBT Quote Generator"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>Random Quote Generator</h4>
+              <p>Random LGBT quote generator created for a freeCodeCamp assignment</p>
+              <a href="https://codepen.io/nonlinearone1105/pen/mWWQmQ" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Fotomatic</h4>
-          <p>Mock website for a camera created for a Codecademy web design bootcamp</p>
-          <div class="image-container">
-            <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/fotomatic/blob/master/index.html" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/fotomatic.jpeg" alt="Fotomatic Website"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>Fotomatic</h4>
+              <p>Mock website for a camera created for a Codecademy web design bootcamp</p>
+              <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/fotomatic/blob/master/index.html" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Secret Agent Supply</h4>
-          <p>Mock website for spy company created for a Codecademy web design bootcamp</p>
-          <div class="image-container">
-            <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/SecretAgentSupply/blob/master/index.html" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/secret-agent-supply.jpeg" alt="Secret Agent Supply Website"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>Secret Agent Supply</h4>
+              <p>Mock website for spy company created for a Codecademy web design bootcamp</p>
+              <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/SecretAgentSupply/blob/master/index.html" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Tea Cozy</h4>
-          <p>Mock website for a tea shop created for a Codecademy web design bootcamp</p>
-          <div class="image-container">
-            <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/TeaCozy/blob/master/index.html" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/tea-cozy.jpeg" alt="Tea Cozy Website"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>Tea Cozy</h4>
+              <p>Mock website for a tea shop created for a Codecademy web design bootcamp</p>
+              <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/TeaCozy/blob/master/index.html" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Tortoiseshell Optics</h4>
-          <p>Mock website for an optometrist created for a Codecademy web design bootcamp</p>
-          <div class="image-container">
-            <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/Tortoiseshell/blob/master/index.html" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/tortoiseshell.jpeg" alt="Tortoiseshell Optics Website"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>Tortoiseshell Optics</h4>
+              <p>Mock website for an optometrist created for a Codecademy web design bootcamp</p>
+              <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/Tortoiseshell/blob/master/index.html" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>MY Times</h4>
-          <p>Mock news site created for a Codecademy web design bootcamp</p>
-          <div class="image-container">
-            <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/mytimes/blob/master/index.html" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/my-times.jpeg" alt="MY Times Website"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>MY Times</h4>
+              <p>Mock news site created for a Codecademy web design bootcamp</p>
+              <a href="http://htmlpreview.github.io/?https://github.com/nonlinearone1105/mytimes/blob/master/index.html" target="_blank">Go</a>
+            </div>
           </div>
         </div>
-        <div class="col-sm-3">
-          <h4>Tribute Page</h4>
-          <p>Tribute page created for a freeCodeCamp assignment</p>
-          <div class="image-container">
-            <a href="https://codepen.io/nonlinearone1105/pen/XMMdEX" target="_blank">
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
               <img src="./resources/images/tribute-page.jpeg" alt="Bernadette Peters Tribute Page"/>
-            </a>
+            </div>
+            <div class="back">
+              <h4>Tribute Page</h4>
+              <p>Tribute page created for a freeCodeCamp assignment</p>
+              <a href="https://codepen.io/nonlinearone1105/pen/XMMdEX" target="_blank">Go</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!--Create section for contact information-->
-    <div class="container" id="contact">
-      <h3>Contact Me</h3>
-      <p>Email: mepaul1210@gmail.com</p>
+    <div id="contact" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <h3>Contact Me</h3>
+        </div>
+        <div class="back">
+          <p>Email: <a href="mailto:mepaul1210@gmail.com">mepaul1210@gmail.com</a></p>
+          <p>Phone: <span>972-824-3125</span></p>
+        </div>
+      </div>
     </div>
 
     <!--Create footer to link to social media-->
-    <footer class="container-fluid" id="social">
-      <div class="row">
-        <p class="col-sm-4">&copy Meghan Paul 2017</p>
-        <ul class="col-sm-8">
-          <li class="col-sm-1">
-            <a href="https://www.freecodecamp.com/nonlinearone1105" target="_blank">
-              <img src="https://cdn.rawgit.com/Deftwun/e3756a8b518cbb354425/raw/6584db8babd6cbc4ecb35ed36f0d184a506b979e/free-code-camp-logo.svg" alt="FreeCodeCamp button"/>
-            </a>
-          </li>
-          <li class="col-sm-1">
-            <a href="https://codepen.io/nonlinearone1105" target="_blank">
-              <img src="https://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg" alt="CodePen button"/>
-            </a>
-          </li>
-          <li class="col-sm-1">
-            <a href="https://github.com/nonlinearone1105" target="_blank">
-              <img src="http://image005.flaticon.com/25/svg/25/25231.svg" alt="GitHub button"/>
-            </a>
-          </li>
-          <li class="col-sm-1">
-            <a href="https://www.linkedin.com/in/meghan-paul-002689120?trk=nav_responsive_tab_profile" target="_blank">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt="LinkedIn button"/>
-            </a>
-          </li>
-        </ul>
+    <footer id="social">
+      <div id="copyright">
+        <p>&copy Meghan Paul 2018</p>
+      </div>
+      <div id="social-links">
+        <a href="https://www.freecodecamp.com/nonlinearone1105" target="_blank">
+          <i class="fab fa-free-code-camp"></i>
+        </a>
+        <a href="https://codepen.io/nonlinearone1105" target="_blank">
+          <i class="fab fa-codepen"></i>
+        </a>
+        <a href="https://github.com/nonlinearone1105" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/meghan-paul-002689120?trk=nav_responsive_tab_profile" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
       </div>
     </footer>
   </body>
