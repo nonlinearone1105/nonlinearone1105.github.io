@@ -29,6 +29,7 @@ body {
   margin-top: 7rem;
   display: inline-block;
   box-shadow: inset 1px 1px 10px #000;
+  letter-spacing: 2px;
 }
 
 h1 {
@@ -36,7 +37,7 @@ h1 {
   margin:0;
 }
 
-h2 {
+.info p {
   padding-top: 0.5rem;
   font-size: 1.5rem;
 }
@@ -50,13 +51,19 @@ nav {
 nav a {
   color: #000;
   font-size: 1rem;
-  padding-right: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffffff;
 }
 
 a:hover {
   cursor: pointer;
   text-decoration: none;
   color: #FFF;
+}
+
+nav li {
+  display: inline-block;
 }
 
 ul {
@@ -77,7 +84,7 @@ ul img {
   max-width: 100%;
 }
 
-#portfolio h3 {
+#portfolio h2 {
   text-align: center;
   font-size: 2.25rem;
   font-weight: bold;
@@ -96,7 +103,7 @@ ul img {
   text-align: center;
 }
 
-h4 {
+h3 {
   margin-top: 0;
 }
 
@@ -112,8 +119,8 @@ h4 {
 }
 
 .flip-container, .front, .back {
-	width: 256px;
-	height: 194px;
+	width: 300px; /* 256px */
+	height: 227px; /* 194 px */
 }
 
 /* flip speed goes here */
@@ -164,7 +171,7 @@ h4 {
     margin: auto;
 }
 
-#contact h3 {
+#contact h2 {
   text-align: center;
   color: #FFF;
   font-size: 2rem;
